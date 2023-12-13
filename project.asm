@@ -248,14 +248,14 @@ verificacion proc near
      reseteo proc near               
     
             
-           MOV AH,00h                   ;set the configuration to video mode
-            MOV AL,13h                   ;choose the video mode
-            INT 10h                      ;execute the configuration 
+           MOV AH,00h                   
+            MOV AL,13h                  
+            INT 10h                       
         
-            MOV AH,0Bh                   ;set the configuration
-            MOV BH,00h                   ;to the background color
-            MOV BL,00h                   ;choose black as background color
-            INT 10h                      ;execute the configuration
+            MOV AH,0Bh                   
+            MOV BH,00h                   
+            MOV BL,00h                   
+            INT 10h                    
             
             RET  
      reseteo endp 
